@@ -24,9 +24,9 @@ export default {
     },
     fontFamily: {
       Roboto: ['Roboto', 'sans-serif'],
-      Montserrat: ['Montserrat', 'sans-serif']
-      // Cinzel: ['Cinzel', 'serif'], // 英文優先
-      // Noto: ['Noto Serif TC', 'serif'], // 中文優先
+      Montserrat: ['Montserrat', 'sans-serif'],
+      Cinzel: ['Cinzel', 'serif'], // 英文優先
+      Noto: ['Noto Sans TC', 'serif'], // 中文優先
     },
     fontSize: {
       xs: '.75rem',

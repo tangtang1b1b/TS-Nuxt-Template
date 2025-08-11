@@ -4,7 +4,7 @@ const { t } = useI18n()
 
 <template>
   <div class="py-10">
-    <div class="text-center text-4xl font-bold mb-10">
+    <div class="text-center font-Noto text-4xl font-bold mb-10">
       {{ t('title') }}
     </div>
     <div class="container grid md:grid-cols-2 lg:grid-cols-3 gap-10 text-2xl">
