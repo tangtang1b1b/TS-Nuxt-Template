@@ -31,9 +31,6 @@ export default defineNuxtConfig({
         { rel: 'apple-touch-icon', sizes: '180x180', href: `${process.env.APP_URL}/apple-touch-icon.png` },
         { rel: 'icon', type: 'image/png', sizes: '192x192', href: `${process.env.APP_URL}/android-chrome-192x192.png` },
         { rel: 'icon', type: 'image/png', sizes: '512x512', href: `${process.env.APP_URL}/android-chrome-512x512.png` },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&display=swap' },
       ],
       noscript: [
         { children: 'JavaScript is required' },
@@ -79,6 +76,8 @@ export default defineNuxtConfig({
       },
     ],
     '@vueuse/nuxt',
+    '@nuxt/image',
+    '@nuxtjs/google-fonts',
   ],
 
   vite: {
@@ -92,6 +91,35 @@ export default defineNuxtConfig({
   },
 
   css: ['~/assets/css/tailwind.css'],
+
+  // Google Fonts 配置
+  googleFonts: {
+    families: {
+      Roboto: [400, 700],
+      Cinzel: [400, 500, 600, 700, 800, 900],
+      'Noto Sans TC': [200, 300, 400, 500, 600, 700, 800, 900],
+      Montserrat: [100, 200, 300, 400, 500, 600, 700, 800, 900],
+    },
+    display: 'swap',
+    preload: false,
+    download: true,
+    inject: true,
+  },
+
+  // Nuxt Image 配置
+  image: {
+    quality: 80,
+    format: ['webp'],
+    screens: {
+      xs: 320,
+      sm: 640,
+      md: 768,
+      lg: 1024,
+      xl: 1280,
+      xxl: 1536,
+      '2xl': 1536
+    },
+  },
 
   postcss: {
     plugins: {
@@ -118,4 +146,4 @@ export default defineNuxtConfig({
 
   devtools: { enabled: process.env.NODE_ENV === 'development' },
   compatibilityDate: '2025-07-17',
-})
+} as any)
