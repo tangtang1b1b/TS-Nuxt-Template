@@ -58,7 +58,6 @@ watch(modelValue, () => {
 <template>
   <div class="fixed inset-0" v-if="modelValue">
     <Teleport to="#modalsField">
-      <!-- <AtomBackdrop :is-open="isOpen" @click="closeModal" /> -->
       <Transition name="fade" appear>
         <div
           ref="container"
