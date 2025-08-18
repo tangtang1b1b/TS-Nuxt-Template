@@ -34,7 +34,7 @@ const closeModal = () => {
       <AtomBackdrop class="pointer-events-auto" :is-open="isOpen" @click="closeModal" />
       <Transition name="fade" appear>
         <div
-          class="pointer-events-auto absolute left-1/2 top-1/2 flex w-[700px] -translate-x-1/2 -translate-y-1/2 flex-col justify-between rounded-[22px] bg-white px-[30px] py-[18px] shadow-popup"
+          class="pointer-events-auto absolute left-1/2 top-1/2 flex w-[min(100%,90vw,90vh)] -translate-x-1/2 -translate-y-1/2 flex-col justify-between rounded-[22px] bg-white px-[30px] py-[18px] shadow-popup"
         >
           <div>
             <ModalSliderBasic id="default_slider" pagination-id="default_slider_Pagination" :slide-data="items" :autoplay="false">

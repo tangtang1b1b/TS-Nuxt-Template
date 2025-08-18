@@ -24,7 +24,7 @@ const closeModal = () => {
       <AtomBackdrop class="pointer-events-auto" :is-open="isOpen" @click="closeModal" />
       <Transition name="fade" appear>
         <div
-          class="absolute left-1/2 top-1/2 flex aspect-video w-[calc(100%-80px)] -translate-x-1/2 -translate-y-1/2 flex-col justify-between rounded-lg bg-white p-2 shadow-popup lg:w-auto lg:p-3"
+          class="absolute pointer-events-auto left-1/2 top-1/2 flex aspect-video w-[min(100%,80vw,calc(80vh*16/9))] -translate-x-1/2 -translate-y-1/2 flex-col justify-between rounded-lg bg-white p-2 shadow-popup lg:p-3"
         >
           <div class="flex items-center justify-center bg-black lg:h-full">
             <slot>
