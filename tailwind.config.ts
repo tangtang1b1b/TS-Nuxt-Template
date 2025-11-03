@@ -1,14 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./components/**/*.{js,vue,ts}",
-    "./layouts/**/*.vue",
-    "./pages/**/*.vue",
-    "./plugins/**/*.{js,ts}",
-    "./nuxt.config.{js,ts}",
-    "./app.{js,ts,vue}",
-    "./error.{js,ts,vue}",
-    "./utils/transition.js"
+    './components/**/*.{js,vue,ts}',
+    './layouts/**/*.vue',
+    './pages/**/*.vue',
+    './plugins/**/*.{js,ts}',
+    './nuxt.config.{js,ts}',
+    './app.{js,ts,vue}',
+    './error.{js,ts,vue}',
+    './utils/transition.js',
   ],
   theme: {
     screens: {
@@ -20,7 +20,7 @@ export default {
       '3xl': '1920px',
       '4xl': '2400px',
       '5xl': '3500px',
-      '6xl': '4400px'
+      '6xl': '4400px',
     },
     fontFamily: {
       Roboto: ['Roboto', 'sans-serif'],
@@ -41,7 +41,7 @@ export default {
       '4xl': '2.25rem',
       '5xl': '3rem',
       '6xl': '4rem',
-      '7xl': '5rem'
+      '7xl': '5rem',
     },
     fontWeight: {
       thin: 100,
@@ -52,22 +52,22 @@ export default {
       semibold: 600,
       bold: 700,
       extrabold: 800,
-      black: 900
+      black: 900,
     },
     container: {
       center: true,
       padding: {
         DEFAULT: '20px',
         sm: '20px',
-        md: '40px'
+        md: '40px',
       },
       screens: {
         sm: '480px',
         md: '768px',
         lg: '1024px',
         xl: '1280px',
-        '2xl': '1440px'
-      }
+        '2xl': '1440px',
+      },
     },
     zIndex: {
       '-10': '-10',
@@ -81,11 +81,11 @@ export default {
       50: 50,
       75: 75,
       100: 100,
-      auto: 'auto'
+      auto: 'auto',
     },
     transitionTimingFunction: {
       easeInCubic: 'cubic-bezier(0.32, 0, 0.67, 0)',
-      easeOutQuint: 'cubic-bezier(0.33, 1, 0.68, 1)'
+      easeOutQuint: 'cubic-bezier(0.33, 1, 0.68, 1)',
     },
     extend: {
       colors: {
@@ -95,28 +95,28 @@ export default {
         pr: {
           light: '#C8F5FF',
           DEFAULT: '#00B2FF',
-          dark: '#0A74A1'
+          dark: '#0A74A1',
         },
         sec: {
           DEFAULT: '#FFF4CE',
-          dark: '#FFB647'
+          dark: '#FFB647',
         },
         success: {
           DEFAULT: '#ABE06D',
-          dark: '#61A035'
+          dark: '#61A035',
         },
         alert: {
           light: '#F0923E',
-          DEFAULT: '#E34E1F'
+          DEFAULT: '#E34E1F',
         },
         bgc: {
           paper: '#FCFCFC',
-          DEFAULT: '#D9D9D9'
+          DEFAULT: '#D9D9D9',
         },
         ad: {
           DEFAULT: '#5A78FF',
           light: '#00F0FF',
-          btn: '#104E88'
+          btn: '#104E88',
         },
         gray: {
           100: '#F2F4F7',
@@ -126,13 +126,13 @@ export default {
           500: '#667085',
           600: '#475467',
           700: '#1D2939',
-          800: '#101828'
+          800: '#101828',
         },
         txt: {
           'super-light': '#75fa90',
-          light: '#1DA539',
+          light: '#6A6AFF',
           DEFAULT: '#353437', // 預設文字顏色
-          sec: '#FAD23B'
+          sec: '#FAD23B',
         },
       },
       spacing: {
@@ -172,21 +172,21 @@ export default {
         64: '16rem',
         72: '18rem',
         80: '20rem',
-        96: '24rem'
+        96: '24rem',
       },
       boxShadow: {
         btn: '0px 4px 10px rgba(46, 46, 46, 0.1)',
         card: '0px 4px 10px rgba(57, 87, 132, 0.2)',
         filter: '0px 4px 25px rgba(12, 12, 12, 0.1)',
         nav: '0px 2px 8px rgba(0, 0, 0, 0.15)',
-        popup: '0px 4px 12px rgba(0, 0, 0, 0.1)'
+        popup: '0px 4px 12px rgba(0, 0, 0, 0.1)',
       },
       borderRadius: {
         none: '0',
         sm: '.125rem',
         DEFAULT: '.25rem',
         lg: '.5rem',
-        full: '9999px'
+        full: '9999px',
       },
       fontSize: {
         'dt/menu': [
@@ -194,19 +194,18 @@ export default {
           {
             lineHeight: '26.06px',
             letterSpacing: '6.4px',
-            fontWeight: '500'
-          }
+            fontWeight: '500',
+          },
         ],
         'dt/btn': [
           '24px',
           {
             lineHeight: '34.75px',
-            fontWeight: '500'
-          }
+            fontWeight: '500',
+          },
         ],
-      }
-    }
+      },
+    },
   },
   plugins: [],
 }
-

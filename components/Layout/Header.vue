@@ -26,10 +26,10 @@ onUnmounted(() => {})
 
 <template>
   <header :class="[isScroll ? 'shadow-nav' : '']" class="fixed left-0 top-0 z-100 h-[70px] w-full bg-txt-light">
-    <div class="z-50 mx-auto flex size-full justify-between max-w-screen-3xl items-center bg-txt-light px-5 duration-300">
+    <div class="z-50 mx-auto flex size-full max-w-screen-3xl items-center justify-between bg-txt-light px-5 duration-300">
       <div class="flex h-full w-40 items-center justify-center">
         <NuxtLinkLocale to="/" class="size-full content-center">
-          <img class="w-full" :src="fetchImg('/images/logo.png')" alt="logo" />
+          <p class="font-Noto text-2xl font-bold text-white">我的</p>
         </NuxtLinkLocale>
       </div>
       <!-- <ul class="flex size-full justify-end dev-red">
@@ -41,9 +41,19 @@ onUnmounted(() => {})
           <nuxt-link :to="item.url" class="h-full content-center px-5">{{ item.name }}</nuxt-link>
         </li>
       </ul> -->
-      <div class="flex divide-x text-white font-Montserrat">
-        <SwitchLocalePathLink locale="zh" :class="locale === 'zh' ? 'text-txt-super-light' : ''" class="px-2 hover:text-txt-super-light duration-300">中文</SwitchLocalePathLink>
-        <SwitchLocalePathLink locale="en" :class="locale === 'en' ? 'text-txt-super-light' : ''" class="px-2 hover:text-txt-super-light duration-300">English</SwitchLocalePathLink>
+      <div class="flex divide-x font-Montserrat text-white">
+        <SwitchLocalePathLink
+          locale="zh"
+          :class="locale === 'zh' ? 'text-txt-super-light' : ''"
+          class="px-2 duration-300 hover:text-txt-super-light"
+          >中文</SwitchLocalePathLink
+        >
+        <SwitchLocalePathLink
+          locale="en"
+          :class="locale === 'en' ? 'text-txt-super-light' : ''"
+          class="px-2 duration-300 hover:text-txt-super-light"
+          >English</SwitchLocalePathLink
+        >
       </div>
     </div>
   </header>
